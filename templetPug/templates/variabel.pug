@@ -1,0 +1,13 @@
+html
+   head
+      title Demo Pug
+   body
+      h2 Demo Variabel di dalam Pug      
+      ul(type="none")
+         - var i=0
+         while i < data.length
+            if i % 2 == 1
+               - var s = data[i++].toUpperCase()
+            else
+               - var s = data[i++]
+            li= s

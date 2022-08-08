@@ -1,0 +1,14 @@
+html
+   head
+      title Demo Pug
+   body
+      h2 Demo Pengulangan di dalam Pug      
+      form(action="/", method="post")
+         div
+            label(for="s") Masukkan teks yang akan diulang:         
+            input(type="text", name="s")
+         div
+            label(for="n") Masukkan jumlah pengulangan:
+            input(type="text", name="n", size="10")
+         div
+            input(type="submit", value="Kirim")

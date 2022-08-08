@@ -1,0 +1,15 @@
+html
+   head
+      title Demo Pug
+   body
+      h2 Demo Penelusuran Array di dalam Pug      
+      table(border="1")
+         tr
+            th(width="90") Kode
+            th(width="160") Nama Produk
+            th(width="100") Harga
+         each val in produk
+            tr
+               td #{val[0]}
+               td #{val[1]}
+               td(align="right") #{val[2]}
